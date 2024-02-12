@@ -1,0 +1,50 @@
+#menu .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+nav {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+@media (max-width: 500px) {
+    #menu .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    nav {
+        display: block;
+    }
+}
+
+button {
+    width: 100%;
+}
+
+#contact p,
+#about p {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 2rem;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    width: 100%;
+    color: white;
+    background: black;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+button:hover {
+    opacity: 0.8;
+}
